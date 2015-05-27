@@ -1,5 +1,6 @@
 JFLAGS = -d bin -classpath src
 JC = javac
+RM = rm
 .SUFFIXES: .java .class
 ALL: Rectangle.class Tuple.class Node.class RTree.class
 
