@@ -1,5 +1,5 @@
 #RTree
-This project is a multidimensional indexing and querying RTree program. The implementation stores given data points on disk pages and retrieves them as needed during query processing. To increase the size of the tree, an attribute field is included in each tuple of size 500 char.
+This project is a multidimensional indexing and querying RTree program. The implementation stores given data points on disk pages and retrieves them as needed during query processing. To increase the size of the tree, an attribute field is included in each tuple of size 500 char. The RTree program uses the Hilbert Curve to index the data points. More information on this can be found <a href="http://en.wikipedia.org/wiki/Hilbert_R-tree">here</a>.
 
 #Compiling Instructions
 The RTree program compiles very simply on a linux machine using the included makefile by simply typing “make” inside the RTree root directory. The makefile ensures that the files are compiled in the correct order (1. Rectangle.java 2. Tuple.java 3. Node.java 4. RTree.java). Once the files are compiled, the program can be run in the following format: java –cp bin main.RTree 
