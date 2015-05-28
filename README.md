@@ -7,7 +7,7 @@ The RTree program compiles very simply on a linux machine using the included mak
 
 
 #Usage Instructions
-<list style="text-decoration:none">
+<ul style="list-style-type:none">
 <li>
 Once initiated, the RTree program will save all index pages to disk and create an in-memory R-Tree structure. It then enters a loop asking the user for input while giving 5 different options:
 </li>
