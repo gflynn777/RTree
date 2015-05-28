@@ -7,7 +7,7 @@ The RTree program compiles very simply on a linux machine using the included mak
 
 
 #Usage Instructions
-<ul>
+<list>
 <li>
 Once initiated, the RTree program will save all index pages to disk and create an in-memory R-Tree structure. It then enters a loop asking the user for input while giving 5 different options:
 </li>
@@ -26,6 +26,7 @@ F: Finds the points that maximize a function of two given inputs per the extra c
 <li>
 Q: Ends the program.
 </li>
+</list>
 
 
 #Design Decisions
