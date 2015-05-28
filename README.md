@@ -1,6 +1,5 @@
-
 #RTree
-
+This project is a multidimensional indexing and querying RTree program. The implementation stores given data points on disk pages and retrieves them as needed during query processing. To increase the size of the tree, an attribute field is included in each tuple of size 500 char.
 
 #Compiling Instructions
 The RTree program compiles very simply on a linux machine using the included makefile by simply typing “make” inside the RTree root directory. The makefile ensures that the files are compiled in the correct order (1. Rectangle.java 2. Tuple.java 3. Node.java 4. RTree.java). Once the files are compiled, the program can be run in the following format: java –cp bin main.RTree 
@@ -8,18 +7,25 @@ The RTree program compiles very simply on a linux machine using the included mak
 
 
 #Usage Instructions
+<ul>
+<li>
 Once initiated, the RTree program will save all index pages to disk and create an in-memory R-Tree structure. It then enters a loop asking the user for input while giving 5 different options:
-
+</li>
+<li>
 M : This takes an integer (ex. M 8) and recreates the tree structure using the given integer as the new maximum fill for each node.
-
+</li>
+<li>
 P: Prints the resulting tuples of a previously done query. Printing the query results will print the x, y coordinates of each point along with the 500th index of the tuple description to show that the descriptions are all full. 
-
+</li>
+<li>
 N: Starts a new query. For a single point query, the user can enter the same numbers for both prompts. The program then displays how many results are within the given query and how many pages were accessed (index pages and leaf pages). 
-
+</li>
+<li>
 F: Finds the points that maximize a function of two given inputs per the extra credit assignment.
-
+</li>
+<li>
 Q: Ends the program.
-
+</li>
 
 
 #Design Decisions
